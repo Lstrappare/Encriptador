@@ -1,27 +1,20 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #eff3fd;
-    margin: 40px 50px;
+    margin: 5px 10px;
     font-size: 20px;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
 header {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     color: #062371;
-    margin: 50px 100px;
 }
 
 .ingresar {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin: 10px;
 }
 
 .ingresar p {
@@ -37,50 +30,25 @@ input {
     font-size: 20px;
     color: #062371;
     outline: none;
+    margin: 14px 0;
 }
 
 input::placeholder {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
-    color: #062371;
-}
-
-.mostrar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 22px;
-    background-color: #fff;
-    margin: 50px 100px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 1px 10px 30px 5px #d0d0d0be;
-}
-
-.mostrar p {
-    font-size: 400%;
-    margin: 10px;
-}
-
-.mostrar h2 {
-    font-weight: 700;
-    margin: 10px;
-}
-
-.mostrar h3 {
     font-size: 18px;
-    margin: 10px;
+    color: #062371;
 }
 
 button {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    border-radius: 20px;
-    width: 300px;
-    padding: 20px 0px;
-    margin: 10px;
+    font-size: 16px;
+    border-radius: 16px;
+   /* width: 300px;*/
+    width: 100%;
+    /*padding: 20px 0px;
+    margin: 10px;*/
+    padding: 14px 0;
+    margin-top: 14px;
     border: 1px solid #062371;
     transition: transform 0.4s ease;
 }
@@ -95,13 +63,70 @@ button {
     color: #062371;
 }
 
+.copiar{
+    width: 80%;
+}
+
 .blanco:hover, .azul:hover{
     transform: scale(1.05);
 }
 
+.cuadroEncriptador {
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    margin: 5px;
+    padding: 10px 0px;
+    border-radius: 22px;
+    background-color: #fff;
+    /*margin: 50px 100px;
+    width: 300px;*/
+    text-align: center;
+    box-shadow: 1px 10px 30px 5px #d0d0d0be;
+}
+
+.cuadroEncriptador p {
+    font-size: 250%;
+    margin: 5px;
+}
+
+.cuadroEncriptador h2 {
+    font-weight: 700;
+    margin: 5px;
+}
+
+.cuadroEncriptador h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
 footer {
+    font-size: 14px;
     border-top: 1px solid #062371;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
     padding: 10px;
 }
+
+/* Dispositivos Grandes */ 
+@media (min-width: 1024px) {
+    .contenedor {
+    display: flex;
+    justify-content: space-evenly;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

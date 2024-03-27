@@ -23,21 +23,24 @@
             <p>⚠ Solo letras minúsculas y sin acentos.</p>
             <!-- Botones -->
             <div class="botones">
-                <button class="azul">Encriptar</button>
-                <button class="blanco">Desencriptar</button>
+                <button class="azul" onclick="btnEncriptar()">Encriptar</button>
+                <button class="blanco" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </div>
-        <!-- Mostrar mensaje encriptado o desencriptado. -->
-        <div class="mostrar">
-            <p>🧐</p>
-            <h2>Ningún mensaje encontrado!</h2>
-            <h3>Ingresa el texto que quieras encriptar o desencriptar.</h3>
-            <button class="blanco">copiar</button>
+        
+        <div class="cuadroEncriptador">
+            <!-- Mostrar mensaje encriptado o desencriptado. -->
+            <div id="mostrarMSJEncriptado">
+                <p>🧐</p>
+                <h2>Ningún mensaje encontrado!</h2>
+                <h3>Ingresa el texto que quieras encriptar o desencriptar.</h3>
+            </div>
+            <button class="blanco copiar">copiar</button>
         </div>
     </div>
     <footer> 
         <p>Creado por José Manuel Cisneros, como parte del challenge de Alura LATAM y Oracle One.</p>
     </footer>
-    <script></script>
+    <script src="script.js"></script>
 </body>
 </html>
