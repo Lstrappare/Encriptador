@@ -35,6 +35,7 @@ function btnEncriptar() {
     mostrarMSJEncriptado.innerHTML = encriptado; 
 }
 
+// Función desencriptar
 function desencriptar(mensajeEncriptado) {
     vocalesEncriptadas
     // Mantener el mensaje en minúsculas
@@ -51,4 +52,24 @@ function desencriptar(mensajeEncriptado) {
 function btnDesencriptar() {
     const desencriptado = desencriptar(mensaje.value);
     mostrarMSJEncriptado.innerHTML = desencriptado; 
+}
+
+// Botón para copiar
+function btnCopiar () {
+    const textoEncriptado = mostrarMSJEncriptado.textContent;
+
+    // Crear un elemento de texto temporal para copiar el texto encriptado
+    const tempInput = document.createElement('textarea');
+    tempInput.value = textoEncriptado;
+    document.body.appendChild(tempInput);
+
+    // Seleccionar el texto y copiarlo al portapapeles
+    tempInput.select();
+    document.execCommand('copy');
+
+    // Eliminar el elemento temporal
+    document.body.removeChild(tempInput);
+
+    // Mostrar un mensaje de copia exitosa
+    alert('Texto copiado al portapapeles');
 }
